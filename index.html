@@ -1,0 +1,941 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATTHEW AYITAH</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/circle.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Color Stylesheet -->
+  <link href="css/colors/red-color.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+
+
+  <style type="text/css">
+    .timee {
+      color: #000000;
+      font-size: 14px;
+      padding: 3px 12px;
+      display: inline-block;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      font-weight: 500;
+      box-shadow: 0 2px 7px rgb(0 0 0 / 5%);
+      background-color: bisque;
+      opacity: .8;
+    }
+  </style>
+
+
+  <style type="text/css">
+    /* Position the image container (needed to position the left and right arrows) */
+
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 42%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+
+</head>
+
+<body class="light">
+  <!-- Preloader-->
+  <div class="vfx-loader">
+    <div class="loader-wrapper">
+      <div class="loader-content">
+        <div class="loader-dot dot-1"></div>
+        <div class="loader-dot dot-2"></div>
+        <div class="loader-dot dot-3"></div>
+        <div class="loader-dot dot-4"></div>
+        <div class="loader-dot dot-5"></div>
+        <div class="loader-dot dot-6"></div>
+        <div class="loader-dot dot-7"></div>
+        <div class="loader-dot dot-8"></div>
+        <div class="loader-dot dot-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Starts -->
+  <header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+      <li class="icon-box tooltip active"><i class="fa fa-home"></i> <a href="#home"></a><span
+          class="tooltiptext tooltip-right">Home</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-id-card"></i> <a href="#about"></a><span
+          class="tooltiptext tooltip-right">About Me</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-image"></i> <a href="#exp"></a><span
+          class="tooltiptext tooltip-right">My Experience</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-envelope"></i> <a href="#contact"></a><span
+          class="tooltiptext tooltip-right">Contact Me</span></li>
+
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav class="d-block d-lg-none">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span> <span></span> <span></span>
+        <ul class="list-unstyled" id="menu">
+          <li class="tooltip active"><a href="#home"><i class="fa fa-home"></i></a><span
+              class="tooltiptext tooltip-right">Home</span></li>
+          <li class="tooltip"><a href="#about"><i class="fa fa-id-card"></i></a><span
+              class="tooltiptext tooltip-right">About Me</span></li>
+          <li class="tooltip"><a href="#exp"><i class="fa fa-image"></i></a><span class="tooltiptext tooltip-right">My
+              Experience</span></li>
+          <li class="tooltip"><a href="#contact"><i class="fa fa-envelope"></i></a><span
+              class="tooltiptext tooltip-right">Contact Me</span></li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+  </header>
+  <!-- Header Ends -->
+  <!-- Main Content Starts -->
+  <div id="home" class="home">
+    <section
+      class="container-fluid main-container container-home p-0 hero-area-block utf-element-cover-bg element-cover-bg revealator-slideup revealator-once revealator-delay1"
+      style="background-image:url(img/hero_img_1.jpg);">
+      <!--<div class="color-block d-none d-lg-block"></div>-->
+      <div class="row utf-home-details-container align-items-center">
+        <div class="col-12 col-lg-7 offset-lg-3 utf-home-details text-center text-sm-center ">
+          <div>
+            <img src="img/img-mobile.jpg" class="img-fluid main-img-mobile hero-d-none d-sm-block d-lg-none"
+              alt="my picture" />
+            <h6 class="mb-0 d-block d-lg-block">Hi I'm MATTHEW AYITAH</h6>
+            <h1><span>I Am a</span><span class="typed-words"></span></h1>
+            <p>Detail-oriented Microbiologist with strong expertise in analyzing microbial environments, conducting
+              experiments, and identifying pathogens. Proficient in applying scientific methods to study microorganisms,
+              ensuring accurate data collection, and optimizing laboratory processes. Skilled in collaborating with
+              cross-functional teams, interpreting research findings, and leveraging data insights to support public
+              health initiatives, environmental safety, and medical advancements. Dedicated to ensuring quality control,
+              regulatory compliance, and timely project completion in a fast-paced research setting.
+              <br>
+
+            </p>
+            <a href="#about" class="btn btn-about">About Me <i class="fa fa-user-circle"></i></a>
+            <a href="#contact" class="btn btn-contact">Get in Touch <i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="utf-fixed-wrapper">
+        <!-- Languages list -->
+        <div class="utf-fixed-block block-right">
+          <ul class="list-unstyled languages-list">
+            <li><a href="#" target="_blank"><span class="single-language"> Microbiologist</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- Main Content Ends -->
+
+
+  <!-- Page Title Starts -->
+  <div id="about" class="about">
+    <section class="title-section text-center text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <!-- <p class="utf-section-description">About Main Info</p>	 -->
+      <h1>About <span>ME</span></h1>
+      <div class="animated-bar"></div>
+      <p class="text-max-700">
+
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #77894d;"></i>
+        &nbsp; Microbiologist
+        &nbsp;
+
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #77894d;"></i>
+
+
+
+
+
+
+      </p>
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+      <div class="container">
+        <div class="row">
+
+          <!-- Personal Info Starts -->
+          <div class="col-12 col-lg-12 col-xl-12">
+            <div class="row">
+
+              <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 utf-about-user-img">
+                <img src="img/04.jpg" class="img-fluid main-img-mobile" alt="my picture" />
+
+                <!-- <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/01.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/03.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/04.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/05.jpg" style="width:100%">
+  </div>
+
+ 
+ 
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  
+ </div> -->
+
+
+              </div>
+              <div class="row col-xl-7 col-lg-7 col-md-12 utf-about-dtl">
+                <div class="col-12 mb-3">
+                  <h2 style="font-size: 30px;">MATTHEW AYITAH</h2>
+
+
+                  <ul style="text-align: justify;font-weight: 400;
+    line-height: 1.8;
+    color: #000000;
+    text-align: justify;
+    margin-left: -25px;">
+                    <li>Conduct regular assessments to identify potential microbial risks within clinical, research, or
+                      environmental settings, and develop strategies to mitigate these risks.</li>
+                    <li>Develop and apply specialized microbiological protocols and procedures tailored to specific
+                      organizational needs (e.g., pathogen detection, infection control).</li>
+                    <li>Perform routine and advanced microbial testing (e.g., PCR, ELISA, cultures) to identify
+                      pathogens, assess contamination, and suggest necessary corrective actions.</li>
+                    <li>Ensure proper safety and sterilization protocols (e.g., BSL-2/BSL-3 lab standards) are in place,
+                      with continuous monitoring and updates to safeguard researchers and samples.</li>
+                    <li>Work with academic researchers, healthcare professionals, and laboratory managers to understand
+                      research objectives, ensuring alignment with microbiological testing and data collection.</li>
+                    <li>Evaluate current laboratory workflows and testing methods, identifying inefficiencies and
+                      recommending improvements to increase research accuracy, speed, and productivity.</li>
+                    <li>Gather data from laboratory tests and field studies, analyze trends in microbial behavior, and
+                      generate reports that offer insights to improve public health, clinical treatments, or
+                      environmental safety</li>
+
+
+                  </ul>
+
+                  </p><!-- <p>
+•	Well organized, effective communicator, conscientious multi-tasker, and understand client and costumer requirements
+</p> -->
+                </div>
+                <div class="col-12 mt-3">
+                  <a href="myresume.pdf" target="_blank" class="btn btn-download">Download My CV <i
+                      class="fa fa-download"></i></a>
+                  <a href="#contact" class="btn btn-hire">Hire Me! <i class="fa fa-file"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Personal Info Ends -->
+          <!-- Boxes Starts -->
+          <!--   <div class="col-12 col-lg-12 col-xl-12 pt-5 mt-lg-0 pb-5">
+        <div class="row">
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-camera"></i>
+              <p class="m-0 position-relative">Photography</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-film"></i>
+              <p class="m-0 position-relative">Hiking & Adventure</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-cutlery"></i>
+              <p class="m-0 position-relative">Cooking</p>
+            </div>
+          </div>
+         
+           <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+             <a target="_blank" href="https://www.instagram.com/karmaaaspheree/">
+            <div class="utf-box-stats with-margin">
+        <i class="fa fa-instagram"></i>
+              <p class="m-0 position-relative">Instagram</p>
+            </div>
+              </a>
+          </div>
+      
+          		 
+     <i class="fa-solid fa-bowl-rice"></i>
+        </div>
+      </div> -->
+          <!-- Boxes Ends -->
+        </div>
+
+        <!-- Skills Starts -->
+
+        <!-- Skills Ends -->
+        <br>
+        <!-- Experience & Education Starts -->
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">My Education</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Dec 2024</span>
+                  <span class="time">GPA: 3.88/4.0</span>
+
+                  <h5>Eastern New Mexico University, Portales, NM<span class="place">Master of Science, Biology</span>
+                  </h5>
+                </li>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">July 2018</span>
+                  <span class="time">GPA: 3.88/5.0</span>
+
+                  <h5>University for Development Studies, Ghana<span class="place">Bachelor of Science,
+                      Biochemistry</span></h5>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="exp" class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">Work Experience</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Jan 2025 – Present</span>
+                  <h5>Microbiologist II | Eagle Analytical Science | Houston, TX</h5>
+                  <p><b style="color:#77894d">•</b> Demonstrated GDP Documentation management<br>
+                    <b style="color:#77894d">•</b> Perform USP Bacterial Endotoxin Testing<br>
+
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Jan 2023 – Dec 2024</span>
+                  <h5>Graduate Assistant | Eastern New Mexico University | Portales, NM</h5>
+                  <p><b style="color:#77894d">•</b> Instructed full-time laboratory courses for Organic Chemistry I
+                    (CHEM 341LP) and Organic Chemistry II (CHEM 342LP), focusing on experimental &nbsp;&nbsp;&nbsp;techniques, safety
+                    protocols, and analytical skills to support undergraduate chemistry education<br>
+                    <b style="color:#77894d">•</b> Held office hours to support students, clarify lab assignments, and
+                    enhance understanding of course material<br>
+                    <b style="color:#77894d">•</b> Evaluated assignments and delivered constructive feedback to support
+                    student learning and improve academic outcomes<br>
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Jan 2023 – Dec 2024</span>
+                  <h5>Graduate Tutor | Eastern New Mexico University | Portales, NM</h5>
+                  <p><b style="color:#77894d">•</b> Provided tutoring for Organic Chemistry I (CHEM 341), Organic
+                    Chemistry II (CHEM 342), and additional chemistry courses, offering personalized instruction to
+                    improve comprehension and academic performance<br>
+                    <b style="color:#77894d">•</b> Supported students in understanding complex topics through clear
+                    explanations and tailored guidance<br>
+                    <b style="color:#77894d">•</b> Provided guidance and support to students in completing assignments,
+                    ensuring clarity and adherence to academic standards<br>
+
+                  </p>
+                </li>
+
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Feb 2021 – Dec 2022</span>
+                  <h5>Microbiologist| Atlantic Lifesciences Limited | Ghana</h5>
+                  <p><b style="color:#77894d">•</b> Performed environmental monitoring in the production area and
+                    aseptic areas to assess the microbial conditions of the facility<br>
+                    <b style="color:#77894d">•</b> Performed Microbial Limit Tests (MLT) and pathogen testing on water
+                    and raw materials, ensuring quality compliance<br>
+                    <b style="color:#77894d">•</b> Conducted sterility tests and process validation on finished products
+                    to ensure compliance with quality and regulatory standards<br>
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Aug 2019 – Feb 2021</span>
+                  <h5>Assistant Manager | Onyame Ne Boafo Enterprise | Ghana</h5>
+                  <p><b style="color:#77894d">•</b> Assisted in the recruitment, training, and onboarding of new
+                    employees, ensuring a smooth integration into the team<br>
+                    <b style="color:#77894d">•</b> Served as the primary point of contact for staff, addressing &
+                    resolving workplace issues to maintain a productive work environment<br>
+                    <b style="color:#77894d">•</b> Assisted with daily operations, including opening/closing, inventory
+                    management, and supply procurement<br>
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Sept 2018 – Aug 2019</span>
+                  <h5>National Service | Komfo Anokye Teaching Hospital | Ghana</h5>
+                  <p><b style="color:#77894d">•</b> Collected and analyzed data on infections from surgical incisions to
+                    support pathological research and clinical assessments<br>
+                    <b style="color:#77894d">•</b> Conducted audits of surgical cases on a weekly, monthly & quarterly
+                    basis to ensure accuracy, compliance, and quality standards<br>
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">July 2016 – Aug 2017</span>
+                  <h5>Internship | Seventh Day Adventist (S.D.A), Koforidua | Ghana</h5>
+                  <p><b style="color:#77894d">•</b> Registered clients in information management systems, ensuring
+                    accurate and up-to-date records<br>
+                    <b style="color:#77894d">•</b> Collected biological samples, including blood, stool, and urine,
+                    following established protocols for analysis and testing<br>
+                    <b style="color:#77894d">•</b> Performed numerous clinical tests such as widal tests, full blood
+                    count, urinalysis, Hepatitis B and C testing, prostate-specific antigen (P.S.A.), liver &nbsp;&nbsp;&nbsp;function
+                    test<br>
+
+                  </p>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Experience & Education Ends -->
+        <div class="pb-3 pt-5 utf-testimonials-section utf-single-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">Technical Expertise
+              : </h3>
+          </div>
+
+
+
+          <h6 style="display: inline-block;" class="utf-client-name">Microbiological Analysis and Testing : </h6>&nbsp;
+          <span class="timee">Microbial Testing</span>&nbsp;
+          <span class="timee">Sterility Testing and Validation</span>&nbsp;
+          <span class="timee">Environmental Monitoring</span>&nbsp;
+          <span class="timee">Sample Collection and Analysis (Blood, Urine, Stool)</span>&nbsp;
+          <span class="timee">Media Preparation and Autoclaving</span>&nbsp;
+          <span class="timee">Aseptic Techniques</span>&nbsp;
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Quality Control and Regulatory Compliance : </h6>
+          &nbsp;
+          <span class="timee">Quality Control and Assurance</span>&nbsp;
+          <span class="timee">Process Validation</span>&nbsp;
+          <span class="timee">Regulatory Compliance (FDA, GMP, GLP)</span>&nbsp;
+          <span class="timee">Risk Assessment and Mitigation</span>&nbsp;
+          <span class="timee">Root Cause Analysis</span>&nbsp;
+          <span class="timee">Problem Solving</span>&nbsp;
+
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Laboratory Operations and Instrumentation : </h6>
+          &nbsp;
+          <span class="timee">Laboratory Equipment Operation and Maintenance</span>&nbsp;
+          <span class="timee">Analytical Chemistry</span>&nbsp;
+          <span class="timee">Instrumental Analysis (HPLC, GC, Spectroscopy)</span>&nbsp;
+          <span class="timee">Data Collection and Reporting</span>&nbsp;
+          <span class="timee">Documentation and Record Keeping</span>&nbsp;
+
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Pharmaceutical Chemistry and Formulation : </h6>
+          &nbsp;
+          <span class="timee">Pharmaceutical Formulation</span>&nbsp;
+          <span class="timee">Instrumental Analysis</span>&nbsp;
+
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Team Management and Collaborations : </h6>&nbsp;
+          <span class="timee">Team Training and Onboarding</span>&nbsp;
+          <span class="timee">Inventory Management and Supply Procurement</span>&nbsp;
+
+          <br>
+
+
+
+
+
+
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">PUBLICATIONS</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Kumar, S., Lekshmi, M., Stephen, J.,
+                    Ortiz-Alegria, A., Ayitah, M.,
+                    and Varela, M. F. (2024).
+                    Dynamics of efflux pumps in &nbsp;&nbsp;&nbsp;antimicrobial resistance, persistence, and community
+                    living of
+                    Vibrionaceae. Archives of Microbiology, 206(1), 7. </h5>
+                </li>
+                <li>
+                  <div class="icon"></div>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Aborah, E., Ayitah, M, Boafo, K. F.,
+                    Ortiz-Alegria, A., Lekshmi,
+                    M., Dhanush, C. K., Kumar. S.,
+                    Varela, M. F. (2025). &nbsp;&nbsp;&nbsp;Multidrug resistance and major facilitator superfamily
+                    antimicrobial efflux
+                    pumps of the ESKAPEE pathogen &nbsp;&nbsp;&nbsp;Staphylococcus aureus. Exploration of Drug Science,
+                    3:100897</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">WORKSHOPS / POSITIONS / AWARDS</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Judge, New Mexico State National History
+                    Day Contest Apr. 2024</h5>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Winner, SRCC Best Oral Presenter Award,
+                    Graduate Biology Category Apr. 2024</h5>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Judge, New Mexico National History Day
+                    Central Regional Contest Mar. 2024</h5>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Judge, New Mexico National History Day
+                    Southern Regional Contest Feb. 2024</h5>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Eastern New Mexico University Wesley
+                    Foundation Scholarship Award Apr. 2024</h5>
+
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">MANUSCRIPTS IN REVIEW</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Abagale, A. S., and Ayitah, M. (2018).
+                    Phytochemical and Antimicrobial Investigation of Nymphaea lotus Seed &nbsp;&nbsp;&nbsp;Extracts Against Escherichia
+                    coli and Salmonella typhi (In preparation) </h5>
+                </li>
+                <li>
+                  <div class="icon"></div>
+                  <h5 style="line-height: 1.6;"><b style="color:#77894d">•</b> Kumar, S., Ayitah, M., Ortiz, A. A.,
+                    Boafo. K. F., Aboah, E., and Varela M.F. (2024). Multidrug efflux pumps of the Major &nbsp;&nbsp;&nbsp;Facilitator
+                    Superfamily from the foodborne pathogen Staphylococcus aureus (Manuscript under review)</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Provide Services Starts -->
+
+        <div class="row pb-3 pt-5 utf-services-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">What Can I Do</h3>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Microbial Analysis and Research </h6>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Statistical Analysis</h6>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Aseptic Techniques</h6>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Laboratory Information Management</h6>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">ELISA and immunological assays</h6>
+            </div>
+          </div>
+
+
+
+</div>
+
+
+        <div class="row pb-3 pt-5 utf-services-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">My Hobbies</h3>
+          </div>
+          
+
+          <div class="col-12 col-md-6 col-lg-6">
+      <div class="utf-box-stats with-margin">
+         <img style="width: 13%;" src="img/swimming.svg">
+         <br>
+         
+               <b><p class="m-0 position-relative"><b style="color: #666;">Swimming</b> </p></b>
+             </div>
+     </div>
+
+     
+     <div class="col-12 col-md-6 col-lg-6">
+      <div class="utf-box-stats with-margin">
+         <img style="width: 13%;" src="img/video-camera.svg">
+         <br>
+         
+               <b><p class="m-0 position-relative"><b style="color: #666;">Watching sci-fi videos</b> </p></b>
+             </div>
+     </div>
+
+       
+
+
+          
+
+
+
+
+        </div>
+
+
+
+        <!-- Provide Services Ends -->
+
+
+
+      </div>
+
+
+  </div>
+
+
+
+  <!-- Testimonials section Ends -->
+
+
+  <!-- Choose Your Plan Ends -->
+  </div>
+  </section>
+  </div>
+  <!-- Main Content Ends -->
+
+
+
+  <div class="contact">
+    <!-- Page Title Starts -->
+    <section style="margin-bottom: -2%;"
+      class="title-section text-center text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <!-- <p class="utf-section-description">Connect Me</p>	 -->
+      <h1>Get In <span>Touch</span></h1>
+      <div class="animated-bar"></div>
+      <!-- <p class="text-max-700">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed do sit.</p> -->
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section id="contact"
+      class="main-content revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+      <div class="container">
+        <div class="row" style="justify-content: center;">
+          <!-- Left Side Starts -->
+
+          <div class="col-12 col-lg-8">
+
+           
+            <div class="col-12">
+              <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">My Contact Info
+              </h3>
+            </div>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-map-marker position-absolute"></i>
+              <span class="d-block">Location</span>Houston, TX
+            </p>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-linkedin position-absolute"></i> <span
+                class="d-block">LinkedIn</span><a target="_blank" href="https://www.linkedin.com/in/matthew-ayitah-4b1642158">https://www.linkedin.com/in/matthew-ayitah-4b1642158</a></p>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-envelope position-absolute"></i> <span
+                class="d-block">Email Address</span><a
+                href="mailto:matthewayitah@gmail.com">matthewayitah@gmail.com </a></p>
+
+          </div>
+
+          <!-- Left Side Ends -->
+          <!-- Contact Form Starts -->
+          <!-- <div class="col-12 col-lg-7"> -->
+          <!-- <form class="contactform utf-contact-form form mb-5" method="post" action="">
+            <h4 class="utf-content-title">Quote Of The Day </h4>
+           
+            <div class="row">
+              <h6 class="utf-service-title">" Engineering: The art of organizing and directing men, and of controlling the forces and materials of nature for the benefit of the human race."   
+              </h6>
+             
+            </div>
+          </form> -->
+          <!-- </div> -->
+          <!-- Contact Form Ends -->
+        </div>
+        <!-- Map Section Start -->
+
+        <!-- Map Section End -->
+      </div>
+      <br>
+      <center>
+
+        <h6> " <span style="color: red;">Engineering </span> : The art of organizing and directing men, and of
+          controlling the forces and materials of nature for the benefit of the human race."
+        </h6>
+        <br>
+        <h5 style="font-size: medium;">Powered By <a target="_blank" style="color:red;"
+            href="https://www.unitedopt.com/">United OPT</a></h5>
+        <br>
+        <br>
+      </center>
+    </section>
+    <!-- Contact Section Ends -->
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <!-- JS Files -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/fm.revealator.jquery.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/custom_jquery.js"></script>
+
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/cbpGridGallery.js"></script>
+
+
+  <!--Map Js-->
+
+
+  <script>
+    var typed = new Typed('.typed-words', {
+      strings: ["Microbiologist"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+  </script>
+  <script>
+    tns({
+      container: ".utf-testimonials-section .utf-testimonial-slider",
+      items: 2,
+      gutter: 30,
+      responsive: {
+        0: {
+          items: 1,
+          gutter: 0
+        },
+        768: {
+          items: 2,
+          gutter: 30
+        }
+      },
+      preventScrollOnTouch: "auto",
+      slideBy: "page",
+      mouseDrag: !0,
+      swipeAngle: !1,
+      speed: 400,
+      controls: !1,
+      autoHeight: !0,
+      navPosition: "bottom"
+    });
+  </script>
+  </script>
+</body>
+
+<!-- Mirrored from utouchdesign.com/themes/meetu/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 18:08:41 GMT -->
+
+</html>
